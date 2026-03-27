@@ -8,11 +8,11 @@ import logo from "../assets/logo.gif";
 const App: Component = () => {
 
   const [tasks, setTasks] = createSignal<Task[]>([
-    {
+    /*{
       content: 'asdnaksjd',
       status: TaskStatus.Done,
       archived: false,
-    }
+    }*/
   ])
 
   const onDeleteTask = (index: number, event: Event) => {
