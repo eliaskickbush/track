@@ -2,6 +2,8 @@ import { createSignal, JSX, type Component } from 'solid-js';
 import TaskCard from '../components/TaskCard';
 import { Task, TaskStatus } from '../types/task';
 import TaskList from '../components/TaskList';
+import logo from "../assets/logo.gif";
+
 
 const App: Component = () => {
 
@@ -28,7 +30,7 @@ const App: Component = () => {
   
   return (
     <div class="flex flex-col items-center">
-      <img class='h-40 w-120'  src="assets/logo.gif" alt="Cool logo" />
+      <img class='h-40 w-120'  src={logo} alt="Cool logo" />
       <div class='w-300'>
         <TaskList onNewTask={onNewTask} onDeleteTask={onDeleteTask} tasks={tasks()}></TaskList>
       </div>
